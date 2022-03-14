@@ -32,10 +32,31 @@
 
 # 6. Create an array to store 3 names. Then print out each name on separate lines with a while loop.
 
+# names = ["Ben", "Katrina", "Howie"]
+# names.each do |name|
+#   p name
+# end
+
 # 7. Create an array to store 2 strings. Then add one string to the array and print the array on one line.
+
+# words = ["man", "woman"]
+# words << "person"
+# p words
 
 # 8. Create an array to store 5 numbers. Then change the first number to 10 times its original value and print the array on one line.
 
+# numbers = [1, 2, 3, 4, 5]
+# numbers[0] = numbers[0] * 10
+# p numbers
+
 # 9. Create an array to store 2 numbers. Then print out each number on separate lines with a while loop.
 
+# numbers = [1, 2]
+# numbers.each do |number|
+#   p number
+# end
+
 # 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
+countries = ["Ukraine", "Poland", "Lithuania"]
+countries << "Estonia"
+p countries
