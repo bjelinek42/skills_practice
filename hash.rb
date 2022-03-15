@@ -31,10 +31,31 @@
 
 # 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
 
+# capitals = {"Colorado": "Denver", "Iowa": "Des Moines", "Minnesota": "St.Paul"}
+# capitals["New York"] = "Albany"
+# p capitals
+
 # 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
+
+# laptop = {brand: "HP", model: "Pavilion", year: 2004}
+# p laptop[:brand]
+# p laptop[:model]
+# p laptop[:year]
 
 # 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
 
+# laptops = [{brand: "HP", model: "Pavilion", year: 2004}, {brand: "Apple", model: "Macbook", year: 2006}, {brand: "Dell", model: "Something", year: 2010}]
+# p laptops[1]
+
 # 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
+# definitions = {"table": "set thigns on it", "chair": "sit on it"}
+# definitions["refridgerator"] = "put food in it"
+# p definitions
+
 # 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+
+shirt = {brand: "Nike", color: "red" , size: "M"}
+p shirt[:brand]
+p shirt[:color]
+p shirt[:size]
