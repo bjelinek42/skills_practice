@@ -71,12 +71,29 @@
 # end
 # p short_prod
 
-
 #  7. Start with an array of numbers and create a new array with only the numbers less than 10.
 #     For example, [8, 23, 0, 44, 1980, 3] becomes [8, 0, 3].
 
+# numbers = [8, 23, 0, 44, 1980, 3]
+# low_nums = []
+# numbers.each do |number|
+#   if number < 10
+#     low_nums << number
+#   end
+# end
+# p low_nums
+
 #  8. Start with an array of strings and create a new array with only the strings that don't start with the letter "b".
 #     For example, ["big", "little", "good", "bad"] becomes ["little", "good"].
+
+# strs = ["big", "little", "good", "bad"]
+# no_bs = []
+# strs.each do |str|
+#   if str.include?("b") == false
+#     no_bs << str
+#   end
+# end
+# p no_bs
 
 #  9. Start with an array of hashes and create a new array with only the hashes with prices less than 10 (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}].
