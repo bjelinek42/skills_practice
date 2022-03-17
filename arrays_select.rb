@@ -23,12 +23,29 @@
 # p w_strings
 
 #  3. Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
-
-
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
+
+# products = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+# pricey_products = []
+# products.each do |product|
+#   if product[:price] > 5
+#     pricey_products << product
+#   end
+# end
+# p pricey_products
+
 
 #  4. Start with an array of numbers and create a new array with only the even numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
+
+# numbers = [2, 4, 5, 1, 8, 9, 7]
+# evens = []
+# numbers.each do |number|
+#   if number.even?
+#     evens << number
+#   end
+# end
+# p evens
 
 #  5. Start with an array of strings and create a new array with only the strings shorter than 4 letters.
 #     For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
