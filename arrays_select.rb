@@ -98,5 +98,23 @@
 #  9. Start with an array of hashes and create a new array with only the hashes with prices less than 10 (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}].
 
+# products = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+# cheaps = []
+# products.each do |product|
+#   if product[:price] < 10
+#     cheaps << product
+#   end
+# end
+# p cheaps
+
 # 10. Start with an array of numbers and create a new array with only the odd numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
+
+numbers = [2, 4, 5, 1, 8, 9, 7]
+odds = []
+numbers.each do |num|
+  if num.odd?
+    odds << num
+  end
+end
+p odds
