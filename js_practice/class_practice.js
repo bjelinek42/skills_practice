@@ -137,12 +137,150 @@
 // Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array. 
 // For example, if the method receives [1, 5, 10] and [100, 500, 1000], the method should print a list: 101, 501, 1001, 105, 505, 1005, 110, 510, 1010].
 
-var numbers1 = [1, 5, 10];
-var numbers2 = [100, 500, 1000];
-var sums = [];
-numbers2.forEach(function(number2) {
-  numbers1.forEach(function(number1) {
-    sums.push(number1 + number2);
+// var numbers1 = [1, 5, 10];
+// var numbers2 = [100, 500, 1000];
+// var sums = [];
+// numbers2.forEach(function(number2) {
+//   numbers1.forEach(function(number1) {
+//     sums.push(number1 + number2);
+//   });
+// });
+// console.log(sums);
+
+// 1) Write a function that takes in an array of numbers and returns its sum.
+
+// function sumArray(numbers) {
+//   var sum = 0;
+//   numbers.forEach(function(number) {
+//     sum += number;
+//   });
+//   return sum;
+// }
+
+// console.log(sumArray[1, 2, 3, 4, 5, 6]);
+
+// 2) Write a function that takes in an array of strings and returns the smallest string.
+
+// function shortestString(strings) {
+//   // var strings = ['pizza', 'pencil', 'pen'];
+//   var shortest = strings[0];
+//   strings.forEach(function(string) {
+//     if (string.length < shortest.length) {
+//       shortest = string;
+//     }
+//   });
+//   return shortest;
+// }
+
+// console.log(shortestString(['pizza', 'pencil', 'pen']));
+
+
+// 3) Write a function that takes in an array of numbers and returns a new array with the numbers in reverse order.
+
+// function reverseOrder(numbers) {
+//   // var numbers = [100, 500, 1000];
+//   return numbers.reverse();
+// }
+// console.log(reverseOrder([100, 500, 1000]));
+
+
+// 4) Write a function that takes in an array of words and returns the number of words that begin with the letter “a”.
+
+// function letterAWords(strings) {
+//   var aWords = 0;
+//   strings.forEach(function(string) {
+//     if (string[0] === "a") {
+//       aWords++;
+//     }
+//   });
+//   return aWords;
+// }
+
+// console.log(letterAWords(['animal', 'apple', 'pizza', 'pen', 'ape', 'lint']));
+
+// 5) Write a function that takes in an array of strings and joins them together to make a single string separated by commas.
+
+// function singleString(strings) {
+//   return strings.join();
+// }
+
+// console.log(singleString(['animal', 'apple', 'pizza', 'pen', 'ape', 'lint']));
+// 6) Write a function that takes in an array of numbers and returns the product of all the numbers (each number multiplied by each other).
+
+// function productArray(numbers) {
+//   var product = 1;
+//   numbers.forEach(function(number) {
+//     product *= number;
+//   });
+//   return product;
+// }
+
+// console.log(productArray([1, 2, 3, 4, 5, 6]));
+// 7) Write a function that takes in an array of numbers and returns the two smallest numbers.
+
+// function smallestNumbers(numbers) {
+//   var smallestTwo = [];
+//   for (var i = 0; i < 2; i++) {
+//     var smallest = numbers[0];
+//     numbers.forEach(function(number) {
+//       if (number < smallest && number !== smallestTwo[0]) {
+//         smallest = number;
+//       }
+//     });
+//     smallestTwo.push(smallest);
+//   }
+//   return smallestTwo;
+// }
+
+// console.log(smallestNumbers([3, 6, 8, 2, 4, 6]));
+
+// 8) Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.
+
+// function howManyZeroes(numbers) {
+//   var zeroesArray = [];
+//   numbers.forEach(function(number) {
+//     var str = number.toString();
+//     var zeroes = str.match(/0/g);
+//     if ( zeroes !== null ) {
+//       zeroes = zeroes.join("");
+//       zeroesArray.push(zeroes);
+//     }
+//   });
+//   var zeroesCount = zeroesArray.join("");
+//   console.log(zeroesCount);
+//   return zeroesCount.length;
+// }
+
+// console.log(howManyZeroes([10, 0, 6, 54, 8, 310, 30, 80, 900, 300, 7, 1000]));
+
+// 9) Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.
+
+// function overTen(numbers) {
+//   var value = true;
+//   var i = 0;
+//   while (value === true && i < numbers.length) {
+//     if (numbers[i] < 10) {
+//       value = false;
+//     }
+//     i += 1;
+//   }
+//   return value;
+// }
+
+// console.log(overTen([10, 10, 16, 54, 18, 310, 30, 80, 900, 300, 7, 1000]));
+
+// 10) Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.
+
+function howManyAs(strings) {
+  var string = strings.join("");
+  var as = 0
+  strings = string.split(``);
+  strings.forEach(function(letter) {
+    if (letter.toLowerCase() === "a" ) {
+      as += 1;
+    }
   });
-});
-console.log(sums);
+  return as;
+}
+
+console.log(howManyAs(['animal', 'apple', 'pizza', 'penA', 'ape', 'lint']));
