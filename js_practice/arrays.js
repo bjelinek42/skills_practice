@@ -59,9 +59,7 @@
 
 // var numbers = [1, 2];
 // var i = 0;
-// while (i < numbers.length) {
-//   console.log(numbers[i]);
-//   i++;
+// while (i < numbers.length) { console.log(numbers[i]); i++; 
 // }
 
 // # 10. Create an array to store names of 3 different countries. Then add one more country and print the array one line.
