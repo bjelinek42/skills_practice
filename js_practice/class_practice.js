@@ -236,22 +236,22 @@
 
 // 8) Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.
 
-// function howManyZeroes(numbers) {
-//   var zeroesArray = [];
-//   numbers.forEach(function(number) {
-//     var str = number.toString();
-//     var zeroes = str.match(/0/g);
-//     if ( zeroes !== null ) {
-//       zeroes = zeroes.join("");
-//       zeroesArray.push(zeroes);
-//     }
-//   });
-//   var zeroesCount = zeroesArray.join("");
-//   console.log(zeroesCount);
-//   return zeroesCount.length;
-// }
+function howManyZeroes(numbers) {
+  var zeroesArray = [];
+  numbers.forEach(function(number) {
+    var str = number.toString();
+    var zeroes = str.match(/0/g);
+    if ( zeroes !== null ) {
+      zeroes = zeroes.join("");
+      zeroesArray.push(zeroes);
+    }
+  });
+  var zeroesCount = zeroesArray.join("");
+  console.log(zeroesCount);
+  return zeroesCount.length;
+}
 
-// console.log(howManyZeroes([10, 0, 6, 54, 8, 310, 30, 80, 900, 300, 7, 1000]));
+console.log(howManyZeroes([10, 0, 6, 54, 8, 310, 30, 80, 900, 300, 7, 1000]));
 
 // 9) Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.
 
@@ -273,7 +273,7 @@
 
 function howManyAs(strings) {
   var string = strings.join("");
-  var as = 0
+  var as = 0;
   strings = string.split(``);
   strings.forEach(function(letter) {
     if (letter.toLowerCase() === "a" ) {
