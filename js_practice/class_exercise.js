@@ -1,5 +1,6 @@
 setTimeout(function() {
   console.log('First task done!');
+  
 }, 2000);
 
 setTimeout(function() {
@@ -9,5 +10,4 @@ setTimeout(function() {
 setTimeout(function() {
   console.log('Third task done!');
 }, 6000);
-
 
