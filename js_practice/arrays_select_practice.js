@@ -61,14 +61,59 @@
 // #  6. Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
 // #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
 
+// var products = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }];
+// var shortNames = [];
+// products.forEach(product => {
+//   if (product.name.length < 6) {
+//     shortNames.push(product);
+//   }
+// });
+// console.log(shortNames);
+
 // #  7. Start with an array of numbers and create a new array with only the numbers less than 10.
 // #     For example, [8, 23, 0, 44, 1980, 3] becomes [8, 0, 3].
+
+// var numbers = [8, 23, 0, 44, 1980, 3];
+// var lowNumbers = [];
+// numbers.forEach(num => {
+//   if (num < 10) {
+//     lowNumbers.push(num);
+//   }
+// });
+// console.log(lowNumbers)
 
 // #  8. Start with an array of strings and create a new array with only the strings that don't start with the letter "b".
 // #     For example, ["big", "little", "good", "bad"] becomes ["little", "good"].
 
+// var strings = ["big", "little", "good", "bad"];
+// var noBs = [];
+// strings.forEach(str => {
+//   if (str[0] !== 'b') {
+//     noBs.push(str);
+//   }
+// });
+// console.log(noBs)
+
 // #  9. Start with an array of hashes and create a new array with only the hashes with prices less than 10 (from the :price key).
 // #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}].
 
+// var products = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }];
+// var lowPrices = [];
+// products.forEach(product => {
+//   if (product.price < 10) {
+//     lowPrices.push(product);
+//   }
+// });
+// console.log(lowPrices);
+
 // # 10. Start with an array of numbers and create a new array with only the odd numbers.
 // #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
+
+// var numbers = [2, 4, 5, 1, 8, 9, 7];
+// var odds = [];
+// numbers.forEach(num => {
+//   if (num % 2 !== 0) {
+//     odds.push(num);
+//   }
+// });
+// console.log(odds);
